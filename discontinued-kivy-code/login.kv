@@ -1,0 +1,39 @@
+# This screen will come later in development, so that we can log into our account from any device.
+<Login@Widget>:
+    background_color: 1, 1, 1, 1
+    canvas.before:
+        Color:
+            rgba: root.background_color
+        Rectangle:
+            pos: self.pos
+            size: self.size
+<Login@Label+BackgroundColor>
+    background_color: 1, 1, 1, 1
+    font_name: "assets/NunitoSans-SemiBold.ttf"
+    Label:
+        text: "Log in"
+        font_size: 38
+        color: 0, 0, 0, 1
+        pos: 82, 425
+
+    Label:
+        text: "Username"
+        font_size: 14
+        color: 0.3, 0.3, 0.3, 1
+        pos: 75, 345
+    TextInput:
+        pos: 80, 350
+        size: 260, 32
+    
+    Label:
+        text: "Password"
+        font_size: 14
+        color: 0.3, 0.3, 0.3, 1
+        pos: 75, 265
+    TextInput:
+        pos: 80, 270
+        size: 260, 32
+
+
+    
+
