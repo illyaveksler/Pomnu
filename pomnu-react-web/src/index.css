@@ -5,13 +5,17 @@ body {
 
 .title {
   text-align: left;
-  padding-right: 175px;
+  opacity: 40%;
+  align-items: left;
+  position: relative;
+  padding-right: 390px;
 }
 
 .todo-list {
   background-color: white;
   margin: auto;
-  width: 50%;
+  width: 600px;
+  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,6 +50,7 @@ body {
 input[type=checkbox] {
   margin-right: 10px;
   font-size: 30px;
+  cursor: pointer;
 }
 
 input[type=checkbox]:focus {
