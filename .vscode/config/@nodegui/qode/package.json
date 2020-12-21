@@ -1,0 +1,61 @@
+{
+  "_args": [
+    [
+      "@nodegui/qode@2.1.0",
+      "C:\\Users\\vital\\OneDrive - Douglas College\\Documents\\Code\\projects\\Pomnu\\pomnu-node-gui"
+    ]
+  ],
+  "_from": "@nodegui/qode@2.1.0",
+  "_id": "@nodegui/qode@2.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-R31K60Vba4yO2Fy3qXXJkt7XMZnitDhuAVaibSGSbcBJbHhJh0+pDQjzZve1+uY7tCHFIY0oRq3tb70o/BrPZQ==",
+  "_location": "/@nodegui/qode",
+  "_phantomChildren": {
+    "semver": "6.3.0"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@nodegui/qode@2.1.0",
+    "name": "@nodegui/qode",
+    "escapedName": "@nodegui%2fqode",
+    "scope": "@nodegui",
+    "rawSpec": "2.1.0",
+    "saveSpec": null,
+    "fetchSpec": "2.1.0"
+  },
+  "_requiredBy": [
+    "/@nodegui/nodegui"
+  ],
+  "_resolved": "https://registry.npmjs.org/@nodegui/qode/-/qode-2.1.0.tgz",
+  "_spec": "2.1.0",
+  "_where": "C:\\Users\\vital\\OneDrive - Douglas College\\Documents\\Code\\projects\\Pomnu\\pomnu-node-gui",
+  "author": {
+    "name": "atulanand94@gmail.com"
+  },
+  "dependencies": {
+    "env-paths": "^2.2.0",
+    "make-dir": "^3.0.2",
+    "node-fetch": "^2.6.0",
+    "progress": "^2.0.3",
+    "tar": "^6.0.1"
+  },
+  "description": "Qode is a lightly modified fork of Node.js that merges Node's event loop with Qt's event loop. It is designed to be used together with `@nodegui/nodegui`",
+  "files": [
+    "install.js",
+    "cli.js",
+    "index.js",
+    "src/config.js",
+    "src/downloader.js",
+    "src/extractor.js",
+    "src/setup.js"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@nodegui/qode",
+  "private": false,
+  "scripts": {
+    "postinstall": "node install.js"
+  },
+  "version": "2.1.0"
+}

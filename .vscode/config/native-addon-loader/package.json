@@ -1,0 +1,56 @@
+{
+  "_args": [
+    [
+      "native-addon-loader@2.0.1",
+      "C:\\Users\\vital\\OneDrive - Douglas College\\Documents\\Code\\projects\\Pomnu\\pomnu-node-gui"
+    ]
+  ],
+  "_development": true,
+  "_from": "native-addon-loader@2.0.1",
+  "_id": "native-addon-loader@2.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-tAaKULhDUmHYNZNKAWlvEky0x+y17+6jbtscXpf0WeWCPRP1nR2h3sA128rWRwj0YbpXVaPhPeJT0ejN7bJtyw==",
+  "_location": "/native-addon-loader",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "native-addon-loader@2.0.1",
+    "name": "native-addon-loader",
+    "escapedName": "native-addon-loader",
+    "rawSpec": "2.0.1",
+    "saveSpec": null,
+    "fetchSpec": "2.0.1"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/native-addon-loader/-/native-addon-loader-2.0.1.tgz",
+  "_spec": "2.0.1",
+  "_where": "C:\\Users\\vital\\OneDrive - Douglas College\\Documents\\Code\\projects\\Pomnu\\pomnu-node-gui",
+  "author": {
+    "name": "toyobayashi"
+  },
+  "bugs": {
+    "url": "https://github.com/toyobayashi/native-addon-loader/issues"
+  },
+  "dependencies": {
+    "loader-utils": "^1.2.3"
+  },
+  "description": "Webpack .node file loader",
+  "devDependencies": {
+    "webpack": "^4.39.3"
+  },
+  "homepage": "https://github.com/toyobayashi/native-addon-loader#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "native-addon-loader",
+  "repository": {
+    "url": "git+https://github.com/toyobayashi/native-addon-loader.git",
+    "type": "git"
+  },
+  "scripts": {
+    "test": "node test/webpack && node test/dist/js/main"
+  },
+  "version": "2.0.1"
+}

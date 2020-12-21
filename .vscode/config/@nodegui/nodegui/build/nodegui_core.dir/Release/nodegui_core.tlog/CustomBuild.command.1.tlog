@@ -1,0 +1,10 @@
+^C:\USERS\VITAL\ONEDRIVE - DOUGLAS COLLEGE\DOCUMENTS\CODE\PROJECTS\POMNU\POMNU-NODE-GUI\NODE_MODULES\@NODEGUI\NODEGUI\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-SC:/Users/vital/OneDrive - Douglas College/Documents/Code/projects/Pomnu/pomnu-node-gui/node_modules/@nodegui/nodegui" "-BC:/Users/vital/OneDrive - Douglas College/Documents/Code/projects/Pomnu/pomnu-node-gui/node_modules/@nodegui/nodegui/build" --check-stamp-file "C:/Users/vital/OneDrive - Douglas College/Documents/Code/projects/Pomnu/pomnu-node-gui/node_modules/@nodegui/nodegui/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

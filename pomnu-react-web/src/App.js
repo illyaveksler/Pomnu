@@ -1,7 +1,8 @@
 import './App.css'
 import React, { useState } from "react"
-import TodoItem from "./TodoItem"
-import todosData from "./todosData"
+import TodoItem from "./components/TodoItem"
+import todosData from "./components/todosData"
+import Date from "./components/Date"
 
 function App() {  // Unable to change state yet
     const [todos, setTodos] = useState(todosData);
@@ -9,7 +10,10 @@ function App() {  // Unable to change state yet
     const handleChange = id => {
         const updatedTodos = todos.map(todo => {
             if (todo.id === id) {
-                todo.completed = !todo.completed
+                return {
+                    ...todo,
+                    completed: !todo.completed
+                }
             }
             return todo
         })
@@ -26,6 +30,7 @@ function App() {  // Unable to change state yet
     return (
             <div className="todo-list">
                 <h3 className="title">pomnu</h3>
+                <Date />
                 {todoComponents}
             </div>
     )
