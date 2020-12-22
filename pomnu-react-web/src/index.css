@@ -61,7 +61,7 @@ body {
 
 .add-task {
   width: 75%;
-  height: 38px;
+  height: 30px;
   background-color: rgb(238, 238, 238);
   border: none;
   appearance: none;
@@ -72,9 +72,13 @@ body {
   padding: 10px 70px;
 }
 
+.add-task input:focus {
+  outline: 0;
+}
+
 .add-task-container {
   position: relative;
-  width: 100%;
+  width: 90%;
 }
 
 .add-task-container img {
@@ -82,18 +86,9 @@ body {
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   opacity: 0.7;
-}
-
-.plus {
-  font-size: 40px;
-  opacity: 60%;
-  position: absolute;
-  padding: 522px 385px 110px 0px;
-  user-select: none;
-  
 }
 
 code {

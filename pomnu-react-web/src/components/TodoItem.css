@@ -1,7 +1,8 @@
 
 .todo-item {
-    display: flex;
+    display: inline-block;
     justify-content: flex-start;
+    position: relative;
     align-items: center;
     padding: 20px 20px 0;
     width: 70%;
@@ -13,32 +14,44 @@
     letter-spacing: 1px;
   }
 
-.todo-item input[type=checkbox] {
+.todo-item input[type=radio] {
   font-size: 30px;
   cursor: pointer;
 }
 
-.todo-item input[type=checkbox]:focus {
+.todo-item input[type=radio]:focus {
   outline: 0;
 }
 
 .todo-item input:focus {
-  outline: 0;
+  outline: none;
 }
 
 .again-button {
+  height: 25px;
+  width: 25px;
   position: absolute;
-  margin-left: 340px;
+  transform: translateY(-175%);
+  left: 72%;
 }
 
 .hard-button {
+  height: 25px;
+  width: 25px;
   position: absolute;
-  margin-left: 370px;
+  transform: translateY(-175%);
+  left: 80%;
 }
 
 .good-button {
+  height: 25px;
+  width: 25px;
   position: absolute;
-  margin-left: 400px;
+  transform: translateY(-175%);
+  left: 88%;
 }
 
-  
+.again-button:checked + .again-button::after {
+  background-color: #ff0000;
+  border-color: #ff0000;
+}

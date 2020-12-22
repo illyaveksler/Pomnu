@@ -6,27 +6,41 @@ import Date from "./components/Date"
 import PlusIcon from "./assets/plus-solid.svg"
 
 function App() {  // Unable to change state yet
-    const [todos, setTodos] = useState(todosData);
+    const [todos, setTodos] = useState(todosData)
     
-    const handleChange = id => {
-        const updatedTodos = todos.map(todo => {
-            if (todo.id === id) {
-                return {
-                    ...todo,
-                    completed: !todo.completed
-                }
-            }
-            return todo
-        })
-        setTodos(updatedTodos);
-    }
+    //const handleChange = id => {
+    //    const updatedTodos = todos.map(todo => {
+    //        if (todo.id === id && !todo.again) {
+    //            return {
+    //                ...todo,
+    //                again: !todo.again
+    //            }
+    //        }
+    //        if (todo.id === id && !todo.hard) {
+    //            return {
+    //                ...todo,
+    //                hard: !todo.hard
+    //            }
+    //        }
+    //        if (todo.id === id && !todo.good) {
+    //            return {
+    //                ...todo,
+    //                good: !todo.good
+    //            }
+    //        }
+    //        return todo
+    //    })
+    //    setTodos(updatedTodos);
+    //}
+
     
     const todoComponents = todos.map(item => 
         <TodoItem 
             key={item.id} 
             item={item}
-            handleChange={handleChange}    
+            //handleChange={handleChange}    
             />)
+
 
     return (
         <div className="todo-list">
