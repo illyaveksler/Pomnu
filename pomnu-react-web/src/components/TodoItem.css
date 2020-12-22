@@ -1,0 +1,44 @@
+
+.todo-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 20px 0;
+    width: 70%;
+    border-bottom: 1px solid #cecece;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+    letter-spacing: 1px;
+  }
+
+.todo-item input[type=checkbox] {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.todo-item input[type=checkbox]:focus {
+  outline: 0;
+}
+
+.todo-item input:focus {
+  outline: 0;
+}
+
+.again-button {
+  position: absolute;
+  margin-left: 340px;
+}
+
+.hard-button {
+  position: absolute;
+  margin-left: 370px;
+}
+
+.good-button {
+  position: absolute;
+  margin-left: 400px;
+}
+
+  

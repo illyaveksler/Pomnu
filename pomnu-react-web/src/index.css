@@ -8,7 +8,13 @@ body {
   align-items: left;
   position: relative;
   padding-right: 390px;
-  margin: 0px 0px 40px 0px;
+  margin: 0px 40px 40px 0px;
+}
+
+.settings-button {
+  position: absolute;
+  margin: 10px 0px 0px 530px;
+  align-items: right;
 }
 
 .todo-list {
@@ -34,39 +40,47 @@ body {
   padding: 30px;
 }
 
-.date { 
+.day { 
   text-align: left;
   align-items: left;
-  font-size: 32px;
+  font-size: 30px;
+  font-family: Inter;
+  font-weight: 505;
+  position: relative;
+  padding-right: 335px;
+  margin: 0px 0px -2px 0px;
+}
+
+.date {
+  margin-left: 8em;
+  position: absolute;
+  top: 122px;
+  font-size: 13px;
+  opacity: 70%;
+}
+
+.add-task {
+  width: 75%;
+  height: 42px;
+  background-color: rgb(238, 238, 238);
+  border: none;
+  appearance: none;
+  border-radius: 50px;
   font-family: Inter;
   font-weight: 500;
-  position: relative;
-  padding-right: 290px;
-  margin: 0px 0px 0.5px 0px;
+  text-align: left;
+  padding: 10px 40px;
 }
 
-.todo-item {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px 20px 0;
-  width: 70%;
-  border-bottom: 1px solid #cecece;
-  font-family: Inter;
-  font-size: 22px;
-  color: #333333;
-  letter-spacing: 1px;
+.plus {
+  font-size: 40px;
+  opacity: 60%;
+  position: absolute;
+  padding: 522px 385px 110px 0px;
+  user-select: none;
+  
 }
 
-input[type=checkbox] {
-  margin-right: 10px;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-input[type=checkbox]:focus {
-  outline: 0;
-}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

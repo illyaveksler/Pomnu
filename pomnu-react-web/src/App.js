@@ -29,9 +29,13 @@ function App() {  // Unable to change state yet
 
     return (
             <div className="todo-list">
+                <button className="settings-button" />
                 <h3 className="title">pomnu</h3>
                 <Date />
                 {todoComponents}
+                <br /> 
+                <br />
+                <input autocomplete="off" placeholder="Add a task." className="add-task" />
             </div>
     )
 }

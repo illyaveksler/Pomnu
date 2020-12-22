@@ -4,7 +4,8 @@ function Date()
 {
     return (
         <div>
-        <h3 className="date">Today</h3>
+        <h3 className="day">Today</h3>
+        <span className="date">• DEC 7, Monday</span>
         </div>
     )
 }
