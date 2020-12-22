@@ -61,7 +61,7 @@ body {
 
 .add-task {
   width: 75%;
-  height: 42px;
+  height: 38px;
   background-color: rgb(238, 238, 238);
   border: none;
   appearance: none;
@@ -69,7 +69,22 @@ body {
   font-family: Inter;
   font-weight: 500;
   text-align: left;
-  padding: 10px 40px;
+  padding: 10px 70px;
+}
+
+.add-task-container {
+  position: relative;
+  width: 100%;
+}
+
+.add-task-container img {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  opacity: 0.7;
 }
 
 .plus {
