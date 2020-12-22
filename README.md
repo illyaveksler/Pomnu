@@ -1,3 +1,4 @@
 # Pomnu
 A SRS based revision scheduler.
-https://prod.liveshare.vsengsaas.visualstudio.com/join?B69FC9F0BE531005015E020A968C7DE59825
+https://prod.liveshare.vsengsaas.visualstudio.com/join?A7F3EEDC6D1935F5996B627F4124D7A8E46A
+
