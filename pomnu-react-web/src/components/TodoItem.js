@@ -8,6 +8,11 @@ function TodoItem(props) {
     return (
         <div className="todo-item">
             <p>{props.item.text}</p>
+            <button 
+              className="tag"
+              varient="default"
+              style={{ background: props.item.tag_color }}>• {props.item.tag}
+            </button>
 
             <form>
               <div className="form-check">

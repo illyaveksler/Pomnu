@@ -27,6 +27,14 @@
   outline: none;
 }
 
+.tag {
+  border-radius: 5px;
+  border-color: #ffffff00;
+  font-family: Inter;
+  color: white;
+  transform: translateY(-50%);
+}
+
 .again-button {
   height: 25px;
   width: 25px;

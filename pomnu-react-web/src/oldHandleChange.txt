@@ -1,0 +1,25 @@
+//const handleChange = id => {
+    //    const updatedTodos = todos.map(todo => {
+    //        if (todo.id === id && !todo.again) {
+    //            return {
+    //                ...todo,
+    //                again: !todo.again
+    //            }
+    //        }
+    //        if (todo.id === id && !todo.hard) {
+    //            return {
+    //                ...todo,
+    //                hard: !todo.hard
+    //            }
+    //        }
+    //        if (todo.id === id && !todo.good) {
+    //            return {
+    //                ...todo,
+    //                good: !todo.good
+    //            }
+    //        }
+    //        return todo
+    //    })
+    //    setTodos(updatedTodos);
+    //}
+
