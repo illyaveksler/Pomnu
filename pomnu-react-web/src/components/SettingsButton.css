@@ -1,0 +1,25 @@
+.settings-button {
+    position: absolute;
+    margin: -2px 0px 0px 530px;
+    align-items: center;
+    height: 25px;
+    padding-right: 30px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    transition: filter 300ms;
+  }
+  
+  .settings-button:hover {
+    filter: height(1.5);
+  }
+  
+  .settings-button img {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    opacity: 70%;
+    top: 0px;
+    transition: filter 300ms;
+  }
+  

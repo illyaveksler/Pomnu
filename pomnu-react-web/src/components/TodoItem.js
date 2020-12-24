@@ -3,15 +3,25 @@ import PropTypes from "prop-types"
 import './TodoItem.css'
 
 function TodoItem(props) {
+
+    const completedStyle = {
+      fontStyle: "italic",
+      color: "#cdcdcd",
+      textDecoration: "line-through"
+    }
+
     const [option, setOption] = useState(null)
 
     return (
         <div className="todo-item">
-            <p>{props.item.text}</p>
+            <p style={props.item.completed ? completedStyle : null}>{props.item.text}</p>
             <button 
               className="tag"
               varient="default"
-              style={{ background: props.item.tag_color }}>• {props.item.tag}
+              style={
+                props.item.completed ? completedStyle : {background: props.item.tag_color },
+                props.item.tag === null ? {background: "black"} : {background: props.item.tag_color} }>
+               {props.item.tag === null ? "+ Add tag" : "• " + props.item.tag}
             </button>
 
             <form>
@@ -22,7 +32,10 @@ function TodoItem(props) {
                   value='again'
                   checked={null}
                   className="again-button"
-                  onChange={e => setOption(e.target.value)}
+                  onChange={() => { 
+                    setOption(props.item.value="again")
+                    setOption(props.item.completed=true)
+                    } }
                   />    
               </div>
 
@@ -33,7 +46,10 @@ function TodoItem(props) {
                   value='hard'
                   checked={null}
                   className="hard-button"
-                  onChange={e => setOption(e.target.value)}
+                  onChange={() => { 
+                    setOption(props.item.value="hard") 
+                    setOption(props.item.completed=true)
+                  } }
                   />    
               </div>
 
@@ -44,17 +60,21 @@ function TodoItem(props) {
                   value='good'
                   checked={null}
                   className="good-button"
-                  onChange={e => setOption(e.target.value)}
+                  onChange={() => {
+                    setOption(props.item.value="good")
+                    setOption(props.item.completed=true)
+                    } }
                   />    
               </div>
 
             </form>
+            
+
         </div>
     )
 }
 
 TodoItem.propTypes = {
-    handleChange: PropTypes.func.isRequired,
     item: PropTypes.object.isRequired,
 }
 

@@ -1,0 +1,45 @@
+.add-task {
+    width: 75%;
+    height: 30px;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    appearance: none;
+    border-radius: 50px;
+    font-family: Inter;
+    font-weight: 500;
+    text-align: left;
+    padding: 10px 70px;
+  }
+  
+  .add-task input:focus {
+    outline: 0;
+  }
+  
+  .add-task-container {
+    position: relative;
+    width: 90%;
+  }
+  
+  .add-task-container button {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-task-container img {
+    
+    opacity: 0.7;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: -1px;
+    bottom: -1px;
+    
+  }

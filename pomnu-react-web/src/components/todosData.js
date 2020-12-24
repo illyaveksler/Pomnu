@@ -5,9 +5,8 @@ const todosData = [
         tag: "PHYS 1120",
         tag_color: "red",
         completed: false,
-        again: false,
-        hard: false,
-        good: false
+        values: ["unchecked", "again", "hard", "good"],
+        value: "unchecked"
     },
     {
         id: 2,
@@ -15,9 +14,8 @@ const todosData = [
         tag: "MATH 2232",
         tag_color: "orange",
         completed: false,
-        again: false,
-        hard: false,
-        good: false
+        values: ["unchecked", "again", "hard", "good"],
+        value: "unchecked"
     },
     {
         id: 3,
@@ -25,19 +23,17 @@ const todosData = [
         tag: "BIOL 1210",
         tag_color: "green",
         completed: false,
-        again: false,
-        hard: false,
-        good: false
+        values: ["unchecked", "again", "hard", "good"],
+        value: "unchecked"
     },
     {
         id: 4,
         text: "Thermodynamics Lab",
         tag: "CHEM 1210",
-        tag_color: "blue",
+        tag_color: "#0080ff",
         completed: false,
-        again: false,
-        hard: false,
-        good: false
+        values: ["unchecked", "again", "hard", "good"],
+        value: "unchecked"
     },
     {
         id: 5,
@@ -45,9 +41,8 @@ const todosData = [
         tag: "PHYS 1120",
         tag_color: "red",
         completed: false,
-        again: false,
-        hard: false,
-        good: false
+        values: ["unchecked", "again", "hard", "good"],
+        value: "unchecked"
     },
 ]
 
