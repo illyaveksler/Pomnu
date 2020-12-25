@@ -1,19 +1,22 @@
 import React, { useState } from 'react'
-import Dots from "../assets/ellipsis-h-solid.svg"
 import "./SettingsButton.css"
 
-export default function SettingsButton() {
+export default function SettingsButton(props) {
 
   const [open, setOpen] = useState(false)
-
+  
   return (
         <>
-          <button className="settings-button" onClick={() => setOpen(!open)}>
-            <img src={Dots} alt="dots"></img>
+          <li className="settings-button">
+            <a href="icon" className="icon-button" onClick={e => { setOpen(!open); e.preventDefault();}}>
+              <img src={props.icon} alt="dots" />
+            </a>
 
-            { /*Dropdown goes here.*/ }
-
-          </button>  
+            {open && props.children}
+          </li>  
         </>
     )
+  
+
 }
+

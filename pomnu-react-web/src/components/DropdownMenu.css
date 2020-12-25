@@ -1,0 +1,39 @@
+.dropdown {
+    position: absolute;
+    top: 25px;
+    left: -60px;
+    transform: translateX(-45%);
+    background-color: var(--bg);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 13px;
+    text-align: left;
+    width: 150px;
+    z-index: 999;
+}
+
+.menu-item {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius);
+    transition: background var(--speed);
+    padding: 0.1rem;
+  }
+
+  .menu-item:hover {
+    background-color: #dadadad2;
+  }
+
+  .menu-item svg { 
+      height: 17px;
+      width: 17px;
+      align-self: right;
+  }
+
+  .icon-button {
+    margin-left: auto;
+  }
+  

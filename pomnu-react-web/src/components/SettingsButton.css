@@ -1,25 +1,48 @@
 .settings-button {
-    position: absolute;
-    margin: -2px 0px 0px 530px;
+    position: relative;
+    top: 12px;
+    left: 250px;
+    display: flex;
     align-items: center;
-    height: 25px;
-    padding-right: 30px;
+    width: calc(var(--nav-size) * 0.8);
+    justify-content: center;
+    padding-right: 10px;
     cursor: pointer;
-    border: none;
-    background: transparent;
+  }
+
+  .icon-button {
+    --button-size: calc(var(--nav-size) * 0.5);
+    width: var(--button-size);
+    height: var(--button-size);
+    border-radius: 50%;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 80%;
     transition: filter 300ms;
   }
   
-  .settings-button:hover {
-    filter: height(1.5);
+  .icon-button:hover {
+    filter: opacity(2);
   }
   
+  .icon-button svg {
+    fill: var(--text-color);
+    width: 20px;
+    height: 20px;
+  }
+
   .settings-button img {
     position: absolute;
     height: 25px;
     width: 25px;
     opacity: 70%;
     top: 0px;
-    transition: filter 300ms;
   }
-  
+
+  .dropdown img {
+      height: 18px;
+      width: 18px;
+  }
