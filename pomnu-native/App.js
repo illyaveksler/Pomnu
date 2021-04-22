@@ -26,6 +26,9 @@ export default function App() {
         <TodoItem item={item} />
       )}
       keyExtractor={item => item.key} />
+      <View>
+        
+      </View>
     </View>
     );
 
@@ -46,6 +49,12 @@ const styles = StyleSheet.create({
 
   text: {
     alignItems: 'center',
+  },
+
+  floatingMenuButtonStyle: {
+    alignSelf: 'flex-end',
+    position: 'absolute',
+    bottom: 35
   },
 
   content: {
