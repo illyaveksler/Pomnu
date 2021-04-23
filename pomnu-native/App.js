@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { StyleSheet, View, FlatList, Alert, Text, TouchableWithoutFeedback, TouchableOpacity, Keyboard } from 'react-native'
+import { StyleSheet, View, FlatList, Image, Alert, Text, TouchableWithoutFeedback, TouchableOpacity, Keyboard } from 'react-native'
 import { useFonts } from 'expo-font';
 import { AppLoading } from 'expo-app-loading'
 import Day from './components/Day'
 import TodoItem from './components/TodoItem'
+import FloatingButton from './components/FloatingButton'
 import todosData from './todosData'
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
     'Inter-Medium': require('./assets/fonts/Inter-Medium.ttf'),
     'Inter-SemiBold': require('./assets/fonts/Inter-SemiBold.ttf')
   })
+
 
   if (loaded){
   return (
@@ -26,9 +28,7 @@ export default function App() {
         <TodoItem item={item} />
       )}
       keyExtractor={item => item.key} />
-      <View>
-        
-      </View>
+      <FloatingButton style={{ bottom: 100}} />
     </View>
     );
 
