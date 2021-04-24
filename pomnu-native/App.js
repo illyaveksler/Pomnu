@@ -28,7 +28,7 @@ export default function App() {
         <TodoItem item={item} />
       )}
       keyExtractor={item => item.key} />
-      <FloatingButton style={{ bottom: 100}} />
+      <FloatingButton style={{ bottom: 90}} />
     </View>
     );
 
