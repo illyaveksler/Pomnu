@@ -5337,7 +5337,7 @@
   "resolved" "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz"
   "version" "3.0.4"
 
-"react-native-gesture-handler@*", "react-native-gesture-handler@^1.0.0", "react-native-gesture-handler@^1.10.3":
+"react-native-gesture-handler@*", "react-native-gesture-handler@^1.0.0", "react-native-gesture-handler@^1.0.12", "react-native-gesture-handler@^1.10.3":
   "integrity" "sha512-cBGMi1IEsIVMgoox4RvMx7V2r6bNKw0uR1Mu1o7NbuHS6BRSVLq0dP34l2ecnPlC+jpWd3le6Yg1nrdCjby2Mw=="
   "resolved" "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-1.10.3.tgz"
   "version" "1.10.3"
@@ -5353,7 +5353,7 @@
   "resolved" "https://registry.npmjs.org/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz"
   "version" "1.3.1"
 
-"react-native-reanimated@*", "react-native-reanimated@^1.0.0-alpha", "react-native-reanimated@^1.13.3":
+"react-native-reanimated@*", "react-native-reanimated@^1.0.0", "react-native-reanimated@^1.0.0-alpha", "react-native-reanimated@^1.13.3":
   "integrity" "sha512-i714H24dv6ncpFO7/SZ0PfAMbvjgVbF8Ow2NPtowoZAz8osS54DmTMrkgJ9Za+uEku/s0AEaxqiXG2Xgntvv2g=="
   "resolved" "https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-1.13.3.tgz"
   "version" "1.13.3"
@@ -5441,6 +5441,11 @@
     "stacktrace-parser" "^0.1.3"
     "use-subscription" "^1.0.0"
     "whatwg-fetch" "^3.0.0"
+
+"react-navigation-drawer@^2.7.0":
+  "integrity" "sha512-BKQSTpFPGVI3caFlIbY921NYTRDAf9XFCCmyy4aDlxZLI5FNh8FqzrG10voc5AGy7RegjLdNkkJa40ugu0I5jA=="
+  "resolved" "https://registry.npmjs.org/react-navigation-drawer/-/react-navigation-drawer-2.7.0.tgz"
+  "version" "2.7.0"
 
 "react-navigation-tabs@^2.11.0":
   "integrity" "sha512-mrnHfTVKVvoy5AWJY3vLt6cQLZQlVLgGUykTZerFBdTmxC/rFdsv+y2ec+rmSNy7u5nX+hlQBFvm/MIJ7w01wQ=="
