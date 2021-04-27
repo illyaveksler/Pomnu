@@ -33,7 +33,7 @@ export default class FloatingButton extends React.Component {
                 transform: [
                     {scale: this.animation},
                     {
-                        translateY: this.animation.interpolate({
+                        translateY: this.animation.interpolateNode({
                             inputRange: [0, 1],
                             outputRange: [0, -80]
                         })
@@ -45,7 +45,7 @@ export default class FloatingButton extends React.Component {
                 transform: [
                     {scale: this.animation},
                     {
-                        translateY: this.animation.interpolate({
+                        translateY: this.animation.interpolateNode({
                             inputRange: [0, 1],
                             outputRange: [0, -140]
                         })
@@ -55,7 +55,7 @@ export default class FloatingButton extends React.Component {
 
             const rotation = {
                 transform: [{
-                    rotate: this.animation.interpolate({
+                    rotate: this.animation.interpolateNode({
                         inputRange: [0, 1],
                         outputRange: ['0deg', '45deg'],
                     })
@@ -66,7 +66,7 @@ export default class FloatingButton extends React.Component {
                 transform: [
                     {scale: this.animation},
                     {
-                        translateY: this.animation.interpolate({
+                        translateY: this.animation.interpolateNode({
                             inputRange: [0, 1],
                             outputRange: [0, -80]
                         })
