@@ -1,12 +1,14 @@
 import React from 'react'
-import {View, Text, StyleSheet, SafeAreaView, TouchableOpacity} from 'react-native'
+import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-export default Screen = () => (
-    <View>
+export default class Screen extends React.Component {
+    render() {
+        return (
+    <View style={styles.container}>
         <SafeAreaView style={{flex: 1}}>
             <TouchableOpacity 
-            style={{alignItems: 'flex-end', margin: 16}}
+            style={styles.button}
             onPress={this.props.navigation.openDrawer}>
                 <Icon name='bars' size={24} color='#292929' />
             </TouchableOpacity>
@@ -17,7 +19,9 @@ export default Screen = () => (
             </View>
         </SafeAreaView>      
     </View>
-)
+        )
+    }
+}
 
 const styles = StyleSheet.create({
     container: {
@@ -29,5 +33,12 @@ const styles = StyleSheet.create({
         color: '#292929',
         fontSize: 20,
         fontWeight: 'bold'
+    },
+
+    button: {
+        margin: 24,
+        paddingTop: 15,
+        width: 32,
+        alignSelf: 'flex-end'
     }
 })
