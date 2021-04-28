@@ -1,7 +1,10 @@
 import React from 'react'
 import { View, Text, StyleSheet, Animated, TouchableWithoutFeedback, TouchableOpacity } from 'react-native'
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import { AntDesign, Entypo } from '@expo/vector-icons'
+import Star from '../assets/icons/calendar-star.svg'
 
 export default class FloatingButton extends React.Component {
     animation = new Animated.Value(0)
@@ -16,7 +19,7 @@ export default class FloatingButton extends React.Component {
         }).start();
 
         this.open = !this.open;
-    };
+    }
 
     textFade = () => {
         const toValue = this.open ? 0 : 1
@@ -26,14 +29,14 @@ export default class FloatingButton extends React.Component {
         }).start();
 
         this.open = !this.open;
-      };
+      }
 
     render() {
             const taskStyle = {
                 transform: [
                     {scale: this.animation},
                     {
-                        translateY: this.animation.interpolateNode({
+                        translateY: this.animation.interpolate({
                             inputRange: [0, 1],
                             outputRange: [0, -80]
                         })
@@ -45,7 +48,7 @@ export default class FloatingButton extends React.Component {
                 transform: [
                     {scale: this.animation},
                     {
-                        translateY: this.animation.interpolateNode({
+                        translateY: this.animation.interpolate({
                             inputRange: [0, 1],
                             outputRange: [0, -140]
                         })
@@ -55,7 +58,7 @@ export default class FloatingButton extends React.Component {
 
             const rotation = {
                 transform: [{
-                    rotate: this.animation.interpolateNode({
+                    rotate: this.animation.interpolate({
                         inputRange: [0, 1],
                         outputRange: ['0deg', '45deg'],
                     })
@@ -66,7 +69,7 @@ export default class FloatingButton extends React.Component {
                 transform: [
                     {scale: this.animation},
                     {
-                        translateY: this.animation.interpolateNode({
+                        translateY: this.animation.interpolate({
                             inputRange: [0, 1],
                             outputRange: [0, -80]
                         })
@@ -84,7 +87,7 @@ export default class FloatingButton extends React.Component {
                 </Animated.View>*/}
                 <TouchableWithoutFeedback>
                     <Animated.View style={[styles.button, styles.secondary, repStyle]}>
-                        <Icon name="star" size={20} color="#292929" />
+                        <Star height={26} width={26} />
                     </Animated.View>
                 </TouchableWithoutFeedback>
 
@@ -96,7 +99,7 @@ export default class FloatingButton extends React.Component {
                 </Animated.View>*/}
                 <TouchableWithoutFeedback>
                     <Animated.View style={[styles.button, styles.secondary, taskStyle]}>
-                        <Icon name="check" size={20} color="#292929" />
+                        <FontAwesomeIcon icon={ faCalendarCheck } size={26} />
                     </Animated.View>
                 </TouchableWithoutFeedback>
 

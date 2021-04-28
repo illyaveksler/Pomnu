@@ -8,13 +8,14 @@ import { createAppContainer } from 'react-navigation'
 import { createDrawerNavigator } from 'react-navigation-drawer'
 import SideBar from './components/SideBar'
 import {
-  HomeScreen,
   ProfileScreen,
   DarkModeScreen,
   ConnectCalendarsScreen,
   TutorialScreen,
   LogOutScreen
 } from './screens'
+import HomeScreen  from './screens/Home'
+console.disableYellowBox = true
 
 const DrawerNavigator = createDrawerNavigator({
   HomeScreen: {
@@ -39,14 +40,14 @@ const DrawerNavigator = createDrawerNavigator({
     }
   },
   DarkModeScreen: {
-    screen: DarkModeScreen,
+    screen: TutorialScreen,
     navigationOptions: {
       title: 'Tutorial',
       drawerIcon: <FontAwesomeIcon icon={ faGraduationCap } size={20} />
     }
   },
   TutorialScreen: {
-    screen: TutorialScreen,
+    screen: DarkModeScreen,
     navigationOptions: {
       title: 'Dark Mode',
       drawerIcon: <FontAwesomeIcon icon={ faMoon } size={20} />

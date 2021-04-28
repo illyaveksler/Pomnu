@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         textAlign: 'left',
         fontSize: 28,
         fontFamily: 'Inter-Medium',
-        marginTop: 80,
+        marginTop: 60,
         color: 'black'
     },
     container: {
