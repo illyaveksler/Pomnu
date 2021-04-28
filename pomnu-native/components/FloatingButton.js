@@ -1,10 +1,11 @@
 import React from 'react'
-import { View, Text, StyleSheet, Animated, TouchableWithoutFeedback, TouchableOpacity } from 'react-native'
+import { View, StyleSheet, Animated, TouchableWithoutFeedback, TouchableOpacity } from 'react-native'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons'
-import Icon from 'react-native-vector-icons/FontAwesome'
 import { AntDesign, Entypo } from '@expo/vector-icons'
 import Star from '../assets/icons/calendar-star.svg'
+import AddTaskMenu from './AddTaskMenu.tsx'
+import BottomSheet from '@gorhom/bottom-sheet'
 
 export default class FloatingButton extends React.Component {
     animation = new Animated.Value(0)
@@ -78,8 +79,8 @@ export default class FloatingButton extends React.Component {
             }
 
         return (
+            <>
             <View style={styles.container, this.props.style}>
-
                 {/*<Animated.View style={fade}>
                     <Text style={[styles.text, {bottom: 55}]}>
                         {' New Topic '}
@@ -90,25 +91,23 @@ export default class FloatingButton extends React.Component {
                         <Star height={26} width={26} />
                     </Animated.View>
                 </TouchableWithoutFeedback>
-
-
                 {/*<Animated.View style={fade}>
                     <Text style={[styles.text]}>
                         {' New Task '}
                     </Text>    
                 </Animated.View>*/}
-                <TouchableWithoutFeedback>
+                <TouchableWithoutFeedback onPress={() => {console.log('New Task')}}>
                     <Animated.View style={[styles.button, styles.secondary, taskStyle]}>
                         <FontAwesomeIcon icon={ faCalendarCheck } size={26} />
                     </Animated.View>
                 </TouchableWithoutFeedback>
-
                 <TouchableWithoutFeedback onPress={this.toggleMenu}>
                     <Animated.View style={[styles.button, styles.menu, rotation]}>
                         <AntDesign name="plus" size={24} color="#fff" />
                     </Animated.View>
                 </TouchableWithoutFeedback>
             </View>
+            </>
         )
     }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet, View, FlatList, Image, Alert, SafeAreaView, TouchableWithoutFeedback, TouchableOpacity, Keyboard } from 'react-native'
+import { StyleSheet, View, FlatList, Image, Alert, SafeAreaView, TouchableWithoutFeedback, AsyncStorage, TouchableOpacity, Keyboard } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import { useFonts } from 'expo-font'
 import { AppLoading } from 'expo-app-loading'
