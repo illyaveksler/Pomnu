@@ -7,6 +7,8 @@ import Day from '../components/Day'
 import TodoItem from '../components/TodoItem'
 import FloatingButton from '../components/FloatingButton'
 import todosData from '../todosData'
+import BottomSheet from 'reanimated-bottom-sheet'
+import Animated from 'react-native-reanimated'
 import Screen from './Screen'
 
 export default function Home({navigation}) {
@@ -17,10 +19,34 @@ export default function Home({navigation}) {
     'Inter-Medium': require('../assets/fonts/Inter-Medium.ttf'),
     'Inter-SemiBold': require('../assets/fonts/Inter-SemiBold.ttf')
   })
+    const renderInner = () => {
+      <Text>Hello</Text>
+    }
+    const renderHeader = () => {
+      <View style={styles.header}>
+        <View style={styles.panelHeader}>
+          <View style={styles.panelHandle}>
+
+          </View>
+        </View>
+      </View>
+    }
+
+    bs = React.createRef()
+    fall = new Animated.Value(1)
 
     if (loaded){
       return (
         <View style={styles.container} navigation={navigation} name='Home'>
+        <BottomSheet 
+          ref={this.bs}
+          snapPoints={[330, 0]}
+          renderContent={this.renderInner}
+          renderHeader={this.renderHeader}
+          initialSnap={1}
+          callbackNode={this.fall}
+          enabledGestureInteraction={true}
+        />
           <TouchableOpacity 
             style={styles.naviButton}
             onPress={navigation.openDrawer}>
@@ -65,6 +91,26 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end'
   },
 
+  header: {
+    backgroundColor: '#FFF',
+    shadowColor: '#333333',
+    shadowOffset: {width: -1, height: -3},
+    shadowRadius: 2,
+    shadowOpacity: 0.4,
+    paddingTop: 20,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20
+  },
+  panelHeader: {
+    alignItems: 'center',
+  },
+  panelHandle: {
+    width: 40,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: '#0000040',
+    marginBottom: 10
+  },
   content: {
     flex: 1
   },
