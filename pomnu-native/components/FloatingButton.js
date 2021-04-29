@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons'
 import { AntDesign, Entypo } from '@expo/vector-icons'
 import Star from '../assets/icons/calendar-star.svg'
+import Home from '../screens/Home'
 import AddTaskMenu from './AddTaskMenu.tsx'
 import BottomSheet from '@gorhom/bottom-sheet'
 
@@ -96,7 +97,7 @@ export default class FloatingButton extends React.Component {
                         {' New Task '}
                     </Text>    
                 </Animated.View>*/}
-                <TouchableWithoutFeedback onPress={() => {console.log('New Task')}}>
+                <TouchableWithoutFeedback onPress={() => Home.bs.current.snapPoints(0)}>
                     <Animated.View style={[styles.button, styles.secondary, taskStyle]}>
                         <FontAwesomeIcon icon={ faCalendarCheck } size={26} />
                     </Animated.View>
